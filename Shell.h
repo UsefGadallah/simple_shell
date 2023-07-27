@@ -154,7 +154,7 @@ char **StrTow2(char *, char);
 
 /* toem_Realloc.c */
 char *_MemSet(char *, char, unsigned int);
-void Ffree(char **);
+void FFree(char **);
 void *_Realloc(void *, unsigned int, unsigned int);
 
 /* toem_Memory.c */
@@ -163,7 +163,7 @@ int Bfree(void **);
 /* toem_Atoi.c */
 int Interactive(info_t *);
 int Is_Delim(char, char *);
-int _Isalpha(int);
+int _IsAlpha(int);
 int _Atoi(char *);
 
 /* toem_Errors1.c */
@@ -176,7 +176,7 @@ void Remove_Comments(char *);
 /* toem_BuiltIn.c */
 int _MyExit(info_t *);
 int _MyCd(info_t *);
-int _myhelp(info_t *);
+int _MyHelp(info_t *);
 
 /* toem_BuiltIn1.c */
 int _MyHistory(info_t *);
@@ -184,7 +184,7 @@ int _MyAlias(info_t *);
 
 /*toem_GetLine.c */
 ssize_t Get_Input(info_t *);
-int _Getline(Info_t *, char **, size_t *);
+int _GetLine(Info_t *, char **, size_t *);
 void SigintHandler(int);
 
 /* toem_GetInfo.c */
@@ -213,7 +213,7 @@ int Renumber_History(info_t *info);
 
 /* toem_Lists.c */
 list_t *Add_Node(list_t **, const char *, int);
-list_t *Add_Node_end(list_t **, const char *, int);
+list_t *Add_Node_End(list_t **, const char *, int);
 size_t Print_List_Str(const list_t *);
 int Delete_Node_At_Index(list_t **, unsigned int);
 void Free_List(list_t **);
